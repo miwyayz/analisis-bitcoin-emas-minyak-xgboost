@@ -104,7 +104,7 @@ Hasil tersebut menunjukkan bahwa emas dan minyak tidak selalu mengikuti arah per
 ```text
 ├── README.md
 ├── Notebook
-    └── analisis_bitcoin.ipynb
+    └── xgboost btc.ipynb
 ```
 
 ## Kesimpulan
