@@ -9,6 +9,7 @@ import streamlit as st
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from sklearn.model_selection import TimeSeriesSplit
 from xgboost import XGBRegressor
+from pathlib import Path
 
 # ============================================================
 # KONFIGURASI
@@ -19,7 +20,7 @@ st.set_page_config(
     layout="wide",
 )
 
-DATA_PATH = "merged_data.csv"
+DATA_PATH = Path(__file__).resolve().parent / "merged_data.csv"
 
 BEST_PARAMS = {
     "subsample": 0.6,
